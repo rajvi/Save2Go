@@ -57,16 +57,16 @@
 											UserID
 										</div>
 										<div>
-											<input type=text name="username">
+											<input id="username" type=text name="username">
 										</div>
 										<div>
 											password
 										</div>
 										<div>
-											<input type=password name="password">
+											<input id="password" type=password name="password">
 										</div>
 										<div>
-											<button type=submit>Signup</button>
+											<button id="submit" onclick="submitClick()" type=submit>Signup</button>
 										</div>
 
 									</form>
@@ -106,6 +106,20 @@
 					</div>
 
 			</div>
+
+			<script src="https://www.gstatic.com/firebasejs/4.3.0/firebase.js"></script>
+			<script>
+			// Initialize Firebase
+			var config = {
+				apiKey: "AIzaSyAGgxzEIKifzl_bOGUyq1r_J6c9-hFiUZs",
+				authDomain: "piggyz-3eaa0.firebaseapp.com",
+				databaseURL: "https://piggyz-3eaa0.firebaseio.com",
+				projectId: "piggyz-3eaa0",
+				storageBucket: "piggyz-3eaa0.appspot.com",
+				messagingSenderId: "302270543576"
+			};
+  firebase.initializeApp(config);
+</script>
 
 		<!-- Scripts -->
 			<script src="assets/js/jquery.min.js"></script>
